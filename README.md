@@ -1,1 +1,1 @@
-# myanmar-typeface-examples
+# Myanmar Typeface Examples
