@@ -62,49 +62,23 @@ In order to use with example: the database name is **mm-typeface-examples** and 
 six fields in total: **Myanmar3**, **MyanmarCensus**, **Unicode**, **Padauk**, **ZawgyiOne**, **id** with all *tinytext* type
 expect **id** for primary key with *smallint(2)*.
 
-Another important one is in connection.php. This following line is needed to enable utf-8 conenction with our database.
+Another important one is in **connection.php**. This following line is needed to enable utf-8 conenction with our database.
 
 ```
 	mysqli_set_charset($con,"utf8") or die('Could not connect: ' . mysqli_connect_error());
 ```
 
+You may also need to include `header('Content-type: text/html; charset=UTF-8');` in every single page of your php functions.
+
+One last thing is to define charset in **index.php** head section as following:
 
 
+```
+  <meta charset="utf-8" />
+```
 
+##Testing in Localhost
+Download this git as zip and extract into any directory. You need to create a MySQL database first according to above info.
+You can use any Localhost sever and I am using MAMP to host.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-sdf
+I hope this example helps you in using Myanmar fonts for your webpages. Happy Coding!
